@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- 
+
+Mary Ngo Portfolio Jan 2017 
+
+Hey! I'm also looking for experiences as a junior front end web developer.
+Have some tips and tricks on how I can improve the code for my portfolio website?
+Send me a message and let's chat :D
+
+-->
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta property="og:url" content="http://maryngo.ca" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Hello, I'm Mary Ngo." />
+	<meta property="og:description"        content="I'm a Visual and UX designer based out of Vancouver, Canada." />
+	<meta property="og:image"              content="http://maryngo.ca/img/og-img.jpg" />
+	<title>Mary Ngo - Visual &amp; UX designer</title>
+</head>
+
+<body>
+	<nav class="nav-appear">
+		<ul>
+			<li><a><span class="nav-work">Work</span></a></li>
+			<li><span class="nav-logo" id="nav-logo">[MN]</span></li>
+			<li><a href="about.html"><span>About</span></a></li>
+		</ul>
+		
+	</nav>
+	<div class="page-container">
+ 	<div class="home-hero">
+	 	<h1>Hello, I'm Mary Ngo.<br>I'm a Visual and UX designer.</h1>
+ 		<div class="hero-cta-box">
+ 			<a><span class="bottom"></span></a>
+ 		</div>
+ 	</div>
+ 	<a id="project"></a>
+ 	<div class="container">
+	 	<a class="anchor-no-style" href="rise.html">
+		 	<div class="home-project rise">
+		 		<h2>Rise</h2>
+		 		<h4>Visual Design</h4>
+		 	</div>
+	 	</a>
+	 </div>
+ 	<div class="container">
+	 	<a class="anchor-no-style" href="ukuhub.html">
+	  	<div class="home-project ukuhub">
+	  		<h2>Ukuhub</h2>
+	 		<h4>UI/UX Design</h4>
+	 	</div>
+	 	</a>
+ 	</div>
+ 	<div class="container">
+	 	<a class="anchor-no-style" href="wiivv.html">
+	 	<div class="home-project wiivv">
+	 		<h2>Wiivv Purchase Kits</h2>
+	 		<h4>Packaging Design</h4>
+	 	</div>
+	 	</a>
+ 	</div>
+ 	<div class="container">
+	 	<a class="anchor-no-style" href="soapforhope.html">
+	 	<div class="home-project soapForHope">
+	  		<h2>Soap for Hope</h2>
+	 		<h4>Branding</h4>
+	 	</div>
+	 	</a>
+ 	</div>
+ 	<div class="container">
+	 	<a class="anchor-no-style" href="logos.html">
+	 	<div class="home-project logos">
+	  		<h2>Logo Designs</h2>
+	 		<h4>Branding</h4>
+	 	</div>
+	 	</a>
+ 	</div>
+ 	</div> <!-- END OF PAGE CONTAINER -->
+ 	<footer>
+ 	<div class="footer-container">
+	 	<div class="footer-social-icons left">
+		    <ul class="social-icons">
+		        <li><a href="mailto:hello@maryngo.ca" class="social-icon"> <i class="fa fa-envelope-o"></i></a></li>
+		         <li><a href="https://www.linkedin.com/in/maryqngo" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+		        <li><a href="resume.pdf" class="social-icon"> <i class="fa fa-file-text-o "></i></a></li>
+
+		    </ul>
+		</div>
+		<div class="right extra-margin-top copyright">
+	 		<p class="tiny-font">&copy; 2017 Mary Ngo</p>
+	 	</div>
+	</div>
+ 	</footer> 	
+
+ 	<script type="text/javascript">
+ 	$('#nav-logo').click(function(){
+		$("html, body").animate({
+            scrollTop: 0
+        }, 900);
+        return false;
+	});
+
+	$('.nav-work').click(function(){
+		var offset = -60; 
+		$("html, body").animate({
+            scrollTop: $("#project").offset().top + offset
+        }, 900);
+	});		
+
+
+	$('.bottom').click(function(){
+		var offset = -60; 
+		$("html, body").animate({
+            scrollTop: $("#project").offset().top + offset
+        }, 900);
+	});
+ 	</script>
+
+ 
+</body>
+
+
+</html>
+
